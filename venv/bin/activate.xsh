@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"/home/chr1st14n_ru4/development/Flask/flask_react.js/flask-movie-api/venv"
+$VIRTUAL_ENV = r"/home/chr1st14n_ru4/development/Flask/flask_react.js/venv"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]

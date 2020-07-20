@@ -1,2 +1,2 @@
 
-web: gunicorn app:/flask-movie-api/run.py
+web: gunicorn run:app

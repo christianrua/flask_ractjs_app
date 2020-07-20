@@ -57,7 +57,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV '/home/chr1st14n_ru4/development/Flask/flask_react.js/flask-movie-api/venv'
+set -gx VIRTUAL_ENV '/home/chr1st14n_ru4/development/Flask/flask_react.js/venv'
 
 # https://github.com/fish-shell/fish-shell/issues/436 altered PATH handling
 if test (echo $FISH_VERSION | head -c 1) -lt 3

@@ -1,4 +1,4 @@
-#!/home/chr1st14n_ru4/development/Flask/flask_react.js/flask-movie-api/venv/bin/python
+#!/home/chr1st14n_ru4/development/Flask/flask_react.js/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
