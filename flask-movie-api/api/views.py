@@ -2,6 +2,7 @@ from flask import Blueprint, jsonify, request
 from . import db
 from .models import Movie
 
+
 main = Blueprint('main',__name__)
 
 @main.route('/add_movie',methods=['POST'])
@@ -27,6 +28,10 @@ def movies():
 
     return jsonify({'movies':movies})
 
+@main.route('/')
+def index():
+    #return app.send_static_file('index.html')
+    return main.send_static_file('index.html')
 
 
 
