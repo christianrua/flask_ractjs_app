@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__, 
             static_folder='./react-movie-list/build', 
-            static_url_path='/static')
+            static_url_path='/')
 
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///database.db'
 
@@ -41,7 +41,7 @@ def movies():
 
     return jsonify({'movies':movies})
 
-@app.route('/')
+@app.route('/index')
 def index():
     return app.send_static_file('index.html')
 
