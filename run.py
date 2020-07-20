@@ -3,9 +3,8 @@ from flask import Flask, jsonify, request,render_template
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__, 
-            static_folder='./react-movie-list/build/static', 
-            static_url_path='/',
-            template_folder="./react-movie-list/build")
+            static_folder='./react-movie-list/build', 
+            static_url_path='/static')
 
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///database.db'
 
@@ -44,9 +43,8 @@ def movies():
 
 @app.route('/')
 def index():
-    #return app.send_static_file('index.html')
-    #return app.send_static_file('index.html')
-    return render_template("index.html")
+    return app.send_static_file('index.html')
+
 
 
 
